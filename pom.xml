@@ -46,13 +46,12 @@ Vault currently supports the following: Permissions 3, PEX, GroupManager, bPerms
 		</repository>
 	</repositories>
 
-	<distributionManagement>
- 		<repository>
-      		<id>github</id>
-      		<name>GitHub Packages</name>
-      		<url>https://maven.pkg.github.com/milkbowl/github-releases</url>
-    	</repository>
-	</distributionManagement>
+    <distributionManagement>
+        <repository>
+            <id>endchest-releases</id>
+            <url>https://repo.endchest.ru/releases</url>
+        </repository>
+    </distributionManagement>
 
 	<dependencies>
 		<dependency>

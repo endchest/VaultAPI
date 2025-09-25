@@ -4,13 +4,14 @@ How to include the API with Maven:
 ```xml
 <repositories>
     <repository>
-        <id>jitpack.io</id>
-        <url>https://jitpack.io</url>
+        <id>endchest-releases</id>
+        <name>Endchest Repository</name>
+        <url>https://repo.endchest.ru/releases</url>
     </repository>
 </repositories>
 <dependencies>
     <dependency>
-        <groupId>com.github.MilkBowl</groupId>
+        <groupId>net.milkbowl.vault</groupId>
         <artifactId>VaultAPI</artifactId>
         <version>1.7</version>
         <scope>provided</scope>
@@ -21,10 +22,13 @@ How to include the API with Maven:
 How to include the API with Gradle:
 ```groovy
 repositories {
-    maven { url 'https://jitpack.io' }
+    maven {
+        name "endchestReleases"
+        url "https://repo.endchest.ru/releases"
+    }
 }
 dependencies {
-    compileOnly "com.github.MilkBowl:VaultAPI:1.7"
+    compileOnly "net.milkbowl.vault:VaultAPI:1.7"
 }
 ```
 
